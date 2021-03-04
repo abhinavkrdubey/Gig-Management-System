@@ -16,3 +16,4 @@ references user_details(username), foreign key(gig_id) references gigs(gig_id));
 --following
  create table following(username varchar(40) not null, artist_username varchar(40) not null, foreign key(username) 
 references user_details(username), foreign key(artist_username) references artist_details(artist_username));
+alter table following add primary key(username,artist_username)
