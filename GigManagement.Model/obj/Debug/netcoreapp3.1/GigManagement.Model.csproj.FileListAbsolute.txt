@@ -1,0 +1,18 @@
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.deps.json
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csprojAssemblyReference.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfo.cs
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Sprint-1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.pdb
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.deps.json
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csprojAssemblyReference.cache
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfoInputs.cache
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfo.cs
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csproj.CoreCompileInputs.cache
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.dll
+C:\Users\91863\Desktop\Sprint1\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.pdb

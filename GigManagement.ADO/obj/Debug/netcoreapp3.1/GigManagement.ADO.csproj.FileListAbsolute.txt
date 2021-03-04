@@ -1,0 +1,12 @@
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.ADO.deps.json
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.ADO.dll
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.ADO.pdb
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.csprojAssemblyReference.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.AssemblyInfo.cs
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.csproj.CopyComplete
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.dll
+D:\Programming Stuffs\Sprint-1\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.ADO.pdb
