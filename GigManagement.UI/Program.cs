@@ -306,11 +306,20 @@ namespace GigManagement.UI
                                                         {
                                                             Console.WriteLine("New gig added ");
                                                         }
+                                                        else
+                                                        {
+                                                            throw new GigIDAlreadyExistsExists();
+                                                        }
+                                                    }
+                                                    catch(GigIDAlreadyExistsExists ex)
+                                                    {
+                                                        Console.WriteLine(ex.Message);
                                                     }
                                                     catch (Exception ex)
                                                     {
                                                         Console.WriteLine(ex.Message);
                                                     }
+                                                   
                                                     break;
                                                 case 2:
                                                     Console.WriteLine("Choose an option on how you want to edit the Gig:");

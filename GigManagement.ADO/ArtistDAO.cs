@@ -17,20 +17,30 @@ namespace GigManagement.DAL
         {
             try
             {
-                query = "insert into gigs values(@gig_id,@gig_name,@artist_name,@venue,@gig_date,@genre,DEFAULT)";
+                query = "select * from gigs where gig_id=@gig_id";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@gig_id", creates.gigid);
-                cmd.Parameters.AddWithValue("@gig_name", creates.gig_name);
-                cmd.Parameters.AddWithValue("@artist_name", creates.artist);
-                cmd.Parameters.AddWithValue("@venue", creates.venue);
-                cmd.Parameters.AddWithValue("@gig_date", creates.gigdate);
-                cmd.Parameters.AddWithValue("@genre", creates.genre);
-                
                 con.Open();
-                cmd.ExecuteNonQuery();
-                return true;
+                int record = (int)cmd.ExecuteScalar();
+                if (record == 0)
+                {
+                    query = "insert into gigs values(@gig_id,@gig_name,@artist_name,@venue,@gig_date,@genre,DEFAULT)";
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@gig_id", creates.gigid);
+                    cmd.Parameters.AddWithValue("@gig_name", creates.gig_name);
+                    cmd.Parameters.AddWithValue("@artist_name", creates.artist);
+                    cmd.Parameters.AddWithValue("@venue", creates.venue);
+                    cmd.Parameters.AddWithValue("@gig_date", creates.gigdate);
+                    cmd.Parameters.AddWithValue("@genre", creates.genre);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }

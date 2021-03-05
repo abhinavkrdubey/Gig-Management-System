@@ -32,4 +32,12 @@ namespace GigManagement.UI
 
         }
     }
+
+    class GigIDAlreadyExistsExists: Exception
+    {
+        public GigIDAlreadyExistsExists() : base (String.Format("Gig ID already exists, please enter a differnt gig id "))
+        {
+
+        }
+    }
 }
