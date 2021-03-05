@@ -20,11 +20,17 @@ namespace GigManagement.DAL
                 query = "select * from gigs where gig_id=@gig_id";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@gig_id", creates.gigid);
+
+                
+               
                 con.Open();
-                int record = (int)cmd.ExecuteScalar();
+                //int record = (int)cmd.ExecuteScalar();
+                int record = Convert.ToInt32(cmd.ExecuteScalar());
                 if (record == 0)
                 {
+
                     query = "insert into gigs values(@gig_id,@gig_name,@artist_name,@venue,@gig_date,@genre,DEFAULT)";
+                    
                     cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@gig_id", creates.gigid);
                     cmd.Parameters.AddWithValue("@gig_name", creates.gig_name);
@@ -39,6 +45,7 @@ namespace GigManagement.DAL
                 {
                     return false;
                 }
+               
             }
             catch (Exception ex)
             {
