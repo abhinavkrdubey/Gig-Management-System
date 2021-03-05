@@ -155,34 +155,55 @@ namespace GigManagement.UI
                                                     switch (search_choice)
                                                     {
                                                         case 1:
-                                                            Console.WriteLine("Enter the Gig Name");
-                                                            string gig_name = Console.ReadLine();
-                                                            DataRow row = user.SearchGigByName(gig_name);
-                                                            if (row != null)
+                                                            try
+                                                            {
+                                                                Console.WriteLine("Enter the Gig Name");
+                                                                string gig_name = Console.ReadLine();
+                                                                DataRow row = user.SearchGigByName(gig_name);
+                                                                if (row != null)
 
-                                                                Console.WriteLine($"GigName:{row["gig_name"]} GigDate:{row["gig_date"]} GigVenue:{row["venue"]}");
-                                                            else
-                                                                Console.WriteLine("Invalid Gig_Name");
+                                                                    Console.WriteLine($"GigName:{row["gig_name"]} GigDate:{row["gig_date"]} GigVenue:{row["venue"]}");
+                                                                else
+                                                                    throw new InvalidGigNameException();
+                                                            }
+                                                            catch (InvalidGigNameException ex)
+                                                            {
+                                                                Console.WriteLine(ex.Message);
+                                                            }
                                                             break;
                                                         case 2:
-                                                            Console.WriteLine("Enter the Gig Venue");
+                                                            try
+                                                            {
+                                                                Console.WriteLine("Enter the Gig Venue");
                                                             string gig_venue = Console.ReadLine();
                                                             DataRow row2 = user.SearchGigByVenue(gig_venue);
-                                                            if (row2 != null)
+                                                                if (row2 != null)
 
-                                                                Console.WriteLine($"GigName:{row2["gig_name"]} GigDate:{row2["gig_date"]} GigVenue:{row2["venue"]}");
-                                                            else
-                                                                Console.WriteLine("Invalid Gig_Name");
+                                                                    Console.WriteLine($"GigName:{row2["gig_name"]} GigDate:{row2["gig_date"]} GigVenue:{row2["venue"]}");
+                                                                else
+                                                                    throw new InvalidGigNameException();
+                                                            }
+                                                            catch(InvalidGigNameException ex)
+                                                            {
+                                                                Console.WriteLine(ex.Message);
+                                                            }
                                                             break;
                                                         case 3:
-                                                            Console.WriteLine("Enter the Gig Date");
-                                                            DateTime gig_date = DateTime.Parse(Console.ReadLine());
-                                                            DataRow row1 = user.SearchGigByDate(gig_date);
-                                                            if (row1 != null)
+                                                            try
+                                                            {
+                                                                Console.WriteLine("Enter the Gig Date");
+                                                                DateTime gig_date = DateTime.Parse(Console.ReadLine());
+                                                                DataRow row1 = user.SearchGigByDate(gig_date);
+                                                                if (row1 != null)
 
-                                                                Console.WriteLine($"GigName:{row1["gig_name"]} GigDate:{row1["gig_date"]} GigVenue:{row1["venue"]}");
-                                                            else
-                                                                Console.WriteLine("Invalid Gig_Name");
+                                                                    Console.WriteLine($"GigName:{row1["gig_name"]} GigDate:{row1["gig_date"]} GigVenue:{row1["venue"]}");
+                                                                else
+                                                                    throw new InvalidGigNameException();
+                                                            }
+                                                            catch (InvalidGigNameException ex)
+                                                            {
+                                                                Console.WriteLine(ex.Message);
+                                                            }
                                                             break;
                                                         default:
                                                             Console.WriteLine("Kindly Enter a proper choice");
@@ -300,45 +321,66 @@ namespace GigManagement.UI
                                                     switch (edit_choice)
                                                     {
                                                         case 1:
-                                                            Console.WriteLine("Enter the Gig ID: ");
-                                                            int gig_id = Convert.ToInt32(Console.ReadLine());
-                                                            Console.WriteLine("Enter the updated venue: ");
-                                                            string updated_venue = Console.ReadLine();
-                                                            if (ado.UpdateGigbyVenue(gig_id, updated_venue))
+                                                            try
                                                             {
-                                                                Console.WriteLine("Venue updated ");
+                                                                Console.WriteLine("Enter the Gig ID: ");
+                                                                int gig_id = Convert.ToInt32(Console.ReadLine());
+                                                                Console.WriteLine("Enter the updated venue: ");
+                                                                string updated_venue = Console.ReadLine();
+                                                                if (ado.UpdateGigbyVenue(gig_id, updated_venue))
+                                                                {
+                                                                    Console.WriteLine("Venue updated ");
+                                                                }
+                                                                else
+                                                                {
+                                                                    throw new InvalidGigIdExcpetion();
+                                                                }
                                                             }
-                                                            else
+                                                            catch(InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine("Invalid gig id ");
+                                                                Console.WriteLine(ex.Message);
                                                             }
                                                             break;
                                                         case 2:
-                                                            Console.WriteLine("Enter the Gig ID: ");
-                                                            int gig_id1 = Convert.ToInt32(Console.ReadLine());
-                                                            Console.WriteLine("Enter the updated Date: ");
-                                                            DateTime updated_date = DateTime.Parse(Console.ReadLine());
-                                                            if (ado.UpdateGigbyDate(gig_id1, updated_date))
+                                                            try
                                                             {
-                                                                Console.WriteLine("Date updated");
+                                                                Console.WriteLine("Enter the Gig ID: ");
+                                                                int gig_id1 = Convert.ToInt32(Console.ReadLine());
+                                                                Console.WriteLine("Enter the updated Date: ");
+                                                                DateTime updated_date = DateTime.Parse(Console.ReadLine());
+                                                                if (ado.UpdateGigbyDate(gig_id1, updated_date))
+                                                                {
+                                                                    Console.WriteLine("Date updated");
+                                                                }
+                                                                else
+                                                                {
+                                                                    throw new InvalidGigIdExcpetion();
+                                                                }
                                                             }
-                                                            else
+                                                            catch (InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine("Invalid gig id ");
+                                                                Console.WriteLine(ex.Message);
                                                             }
                                                             break;
                                                         case 3:
-                                                            Console.WriteLine("Enter the Gig ID: ");
-                                                            int gig_id2 = Convert.ToInt32(Console.ReadLine());
-                                                            Console.WriteLine("Do you want to cancel the Gig?");
-                                                            string isCancelled = Console.ReadLine();
-                                                            if (ado.isCancelled(gig_id2, isCancelled))
+                                                            try
                                                             {
-                                                                Console.WriteLine("Gig Status Modified");
+                                                                Console.WriteLine("Enter the Gig ID: ");
+                                                                int gig_id2 = Convert.ToInt32(Console.ReadLine());
+                                                                Console.WriteLine("Do you want to cancel the Gig?");
+                                                                string isCancelled = Console.ReadLine();
+                                                                if (ado.isCancelled(gig_id2, isCancelled))
+                                                                {
+                                                                    Console.WriteLine("Gig Status Modified");
+                                                                }
+                                                                else
+                                                                {
+                                                                    throw new InvalidGigIdExcpetion();
+                                                                }
                                                             }
-                                                            else
+                                                            catch (InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine("Invalid gig id ");
+                                                                Console.WriteLine(ex.Message);
                                                             }
                                                             break;
                                                         default:
@@ -347,15 +389,22 @@ namespace GigManagement.UI
                                                     }
                                                     break;
                                                 case 3:
-                                                    Console.WriteLine("Enter gig Id you want to delete");
-                                                    int gigId = Convert.ToInt32(Console.ReadLine());
-                                                    if (ado.deleteGig(gigId))
+                                                    try
                                                     {
-                                                        Console.WriteLine("Gig deleted");
+                                                        Console.WriteLine("Enter gig Id you want to delete");
+                                                        int gigId = Convert.ToInt32(Console.ReadLine());
+                                                        if (ado.deleteGig(gigId))
+                                                        {
+                                                            Console.WriteLine("Gig deleted");
+                                                        }
+                                                        else
+                                                        {
+                                                            throw new InvalidGigIdExcpetion();
+                                                        }
                                                     }
-                                                    else
+                                                    catch (InvalidGigIdExcpetion ex)
                                                     {
-                                                        Console.WriteLine("will implement throw");
+                                                        Console.WriteLine(ex.Message);
                                                     }
                                                     break;
 

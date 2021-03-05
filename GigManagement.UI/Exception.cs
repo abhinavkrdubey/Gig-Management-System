@@ -18,4 +18,18 @@ namespace GigManagement.UI
 
         }
     }
+    class InvalidGigNameException : Exception
+    {
+        public InvalidGigNameException() : base (String.Format("Gig Name Not Found In The Data Base"))
+        {
+
+        }
+    }
+    class InvalidGigIdExcpetion : Exception
+    {
+        public InvalidGigIdExcpetion() : base (String.Format("Gid Id Not Found In The Data Base"))
+        {
+
+        }
+    }
 }
