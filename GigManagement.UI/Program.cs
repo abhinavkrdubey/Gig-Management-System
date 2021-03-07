@@ -18,14 +18,17 @@ namespace GigManagement.UI
             bool isWholeFalse = true;
             while(isWholeFalse)
             {
+                Console.WriteLine("--------------------------------------------");
                 Console.WriteLine("Please select from the following options:");
                 Console.WriteLine("1. To create account");
                 Console.WriteLine("2. Login to your account");
                 Console.WriteLine("3. To exit from the applicatom");
+                Console.WriteLine("--------------------------------------------");
                 int ch = Convert.ToInt32(Console.ReadLine());
                 switch (ch)
                 {
                     case 1:
+                        Console.WriteLine("--------------------------------------------");
                         Console.WriteLine("Register as 1.user or 2.artist");
                         int ch2 = Convert.ToInt32(Console.ReadLine());
                         bool isFalse = true;
@@ -127,6 +130,7 @@ namespace GigManagement.UI
                                         bool isUserQuit = true;
                                         while(isUserQuit)
                                         {
+                                            Console.WriteLine("--------------------------------------------");
                                             Console.WriteLine("Welcome {0}, Choose one of the following:", uname);
                                             Console.WriteLine("1. View a Gig");
                                             Console.WriteLine("2. Search a gig");
@@ -135,6 +139,7 @@ namespace GigManagement.UI
                                             Console.WriteLine("5. Follow an artist");
                                             Console.WriteLine("6. View Following List");
                                             Console.WriteLine("7. Log out");
+                                            Console.WriteLine("--------------------------------------------");
                                             int user_choice = Convert.ToInt32(Console.ReadLine());
                                             switch (user_choice)
                                             {
@@ -143,14 +148,16 @@ namespace GigManagement.UI
                                                     DataTable dt = user.Getgigs();
                                                     foreach (DataRow r in dt.Rows)
                                                     {
-                                                        Console.WriteLine($"GigName:{r["gig_name"]} GigDate:{r["gig_date"]} GigVenue:{r["venue"]}");
+                                                        Console.WriteLine($"GigName:{r["gig_name"]} \t GigDate:{r["gig_date"]} \t GigVenue:{r["venue"]}");
                                                     }
                                                     break;
                                                 case 2:
+                                                    Console.WriteLine("--------------------------------------------");
                                                     Console.WriteLine("Choose one of the method to search a Gig:");
                                                     Console.WriteLine("1. Search Gig using Gig Name");
                                                     Console.WriteLine("2. Search Gig using Gig Venue");
                                                     Console.WriteLine("3. Search Gig using Gig Date");
+                                                    Console.WriteLine("--------------------------------------------");
                                                     int search_choice = Convert.ToInt32(Console.ReadLine());
                                                     switch (search_choice)
                                                     {
@@ -168,7 +175,9 @@ namespace GigManagement.UI
                                                             }
                                                             catch (InvalidGigNameException ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         case 2:
@@ -185,7 +194,9 @@ namespace GigManagement.UI
                                                             }
                                                             catch(InvalidGigNameException ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         case 3:
@@ -198,11 +209,13 @@ namespace GigManagement.UI
 
                                                                     Console.WriteLine($"GigName:{row1["gig_name"]} GigDate:{row1["gig_date"]} GigVenue:{row1["venue"]}");
                                                                 else
-                                                                    throw new InvalidGigNameException();
+                                                                    throw new NoGigOnDate();
                                                             }
                                                             catch (InvalidGigNameException ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         default:
@@ -213,12 +226,11 @@ namespace GigManagement.UI
                                                 case 3:
                                                     try
                                                     {
-                                                        Console.WriteLine("enter username ");
-                                                        string username = Console.ReadLine();
+                                                        
                                                         Console.WriteLine("enter gig id ");
                                                         int gigid = Convert.ToInt32(Console.ReadLine());
 
-                                                        if (user.AddToCalender(username, gigid))
+                                                        if (user.AddToCalender(uname, gigid))
                                                         {
                                                             Console.WriteLine(" Gig added to Calender");
                                                         }
@@ -236,6 +248,11 @@ namespace GigManagement.UI
                                                     }
                                                     break;
                                                 case 5:
+                                                    dt = user.ViewNames();
+                                                    foreach(DataRow r in dt.Rows)
+                                                    {
+                                                        Console.WriteLine($"{ r["names"] }");
+                                                    }
                                                     Console.WriteLine("Enter the Artist Name you want to follow");
                                                     string follow_artist = Console.ReadLine();
                                                     user.followArtist(uname, follow_artist);
@@ -277,11 +294,13 @@ namespace GigManagement.UI
                                         bool isArtistQuit = true;
                                         while(isArtistQuit)
                                         {
+                                            Console.WriteLine("--------------------------------------------");
                                             Console.WriteLine("Welcome {0}, Choose one of the following:", aname);
                                             Console.WriteLine("1. Add a Gig");
                                             Console.WriteLine("2. Edit a Gig");
                                             Console.WriteLine("3. Remove a Gig");
                                             Console.WriteLine("4. Logout");
+                                            Console.WriteLine("--------------------------------------------");
                                             int artist_choice = Convert.ToInt32(Console.ReadLine());
                                             switch (artist_choice)
                                             {
@@ -313,19 +332,25 @@ namespace GigManagement.UI
                                                     }
                                                     catch(GigIDAlreadyExistsExists ex)
                                                     {
-                                                        Console.WriteLine(ex.Message);
+                                                        Console.ForegroundColor = ConsoleColor.Red;
+                                                        Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                        Console.ForegroundColor = ConsoleColor.White;
                                                     }
                                                     catch (Exception ex)
                                                     {
-                                                        Console.WriteLine(ex.Message);
+                                                        Console.ForegroundColor = ConsoleColor.Red;
+                                                        Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                        Console.ForegroundColor = ConsoleColor.White;
                                                     }
                                                    
                                                     break;
                                                 case 2:
+                                                    Console.WriteLine("--------------------------------------------");
                                                     Console.WriteLine("Choose an option on how you want to edit the Gig:");
                                                     Console.WriteLine("1. Update Gig Venue");
                                                     Console.WriteLine("2. Update Gig Date");
                                                     Console.WriteLine("3. Cancel a Gig");
+                                                    Console.WriteLine("--------------------------------------------");
                                                     int edit_choice = Convert.ToInt32(Console.ReadLine());
                                                     switch (edit_choice)
                                                     {
@@ -347,7 +372,9 @@ namespace GigManagement.UI
                                                             }
                                                             catch(InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         case 2:
@@ -368,7 +395,9 @@ namespace GigManagement.UI
                                                             }
                                                             catch (InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         case 3:
@@ -389,7 +418,9 @@ namespace GigManagement.UI
                                                             }
                                                             catch (InvalidGigIdExcpetion ex)
                                                             {
-                                                                Console.WriteLine(ex.Message);
+                                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                                Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                                Console.ForegroundColor = ConsoleColor.White;
                                                             }
                                                             break;
                                                         default:
@@ -413,8 +444,12 @@ namespace GigManagement.UI
                                                     }
                                                     catch (InvalidGigIdExcpetion ex)
                                                     {
-                                                        Console.WriteLine(ex.Message);
+                                                        Console.ForegroundColor = ConsoleColor.Red;
+                                                        Console.WriteLine(ex.Message, Console.ForegroundColor);
+                                                        Console.ForegroundColor = ConsoleColor.White;
                                                     }
+                                                    break;
+                                                case 4: isArtistQuit = false;
                                                     break;
 
                                                 default:

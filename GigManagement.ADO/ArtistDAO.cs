@@ -7,7 +7,7 @@ namespace GigManagement.DAL
 {
     public class ArtistDAO
     {
-        SqlConnection con = new SqlConnection(@"Data Source=MAITRAYEE1;Initial Catalog=GigManagement;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ACUTTSL\SQLEXPRESS;Initial Catalog=GigManagement;Integrated Security=True");
         SqlCommand cmd = null;
         SqlCommand cmd1 = null;
 

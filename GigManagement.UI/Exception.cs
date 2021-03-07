@@ -40,4 +40,11 @@ namespace GigManagement.UI
 
         }
     }
+    class NoGigOnDate : Exception
+    {
+        public NoGigOnDate() : base(String.Format("No Gig Found on this Date"))
+        {
+
+        }
+    }
 }

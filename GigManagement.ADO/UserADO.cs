@@ -8,7 +8,7 @@ namespace GigManagement.DAL
     public class UserADO
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=MAITRAYEE1;Initial Catalog=GigManagement;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ACUTTSL\SQLEXPRESS;Initial Catalog=GigManagement;Integrated Security=True");
         SqlCommand cmd = null;
         SqlDataAdapter da = null;
 
@@ -41,7 +41,7 @@ namespace GigManagement.DAL
         {
             try
             {
-                query = "Select * from gigs where gig_date= '" +gig_date +"'";
+                query = "Select * from gigs where gig_date= CONVERT(VARCHAR,'" + gig_date.ToLongDateString() + "',103)";
                 da = new SqlDataAdapter(query, con);
                 dt = new DataTable("gigs");
                 da.Fill(dt);
@@ -115,6 +115,21 @@ namespace GigManagement.DAL
             try
             {
                 query = "Select c.username,c.gig_id,g.gig_name,g.artist_name,g.isCancelled,g.gig_date from gigs g, gig_calender c where g.gig_id=c.gig_id";
+                da = new SqlDataAdapter(query, con);
+                dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable ViewNames()
+        {
+            try
+            {
+                query = "select names from artist_details";
                 da = new SqlDataAdapter(query, con);
                 dt = new DataTable();
                 da.Fill(dt);
