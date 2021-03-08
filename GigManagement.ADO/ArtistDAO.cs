@@ -3,11 +3,16 @@ using System.Data;
 using System.Data.SqlClient;
 using GigManagement.Model;
 
+
+
+
 namespace GigManagement.DAL
 {
     public class ArtistDAO
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ACUTTSL\SQLEXPRESS;Initial Catalog=GigManagement;Integrated Security=True");
+
+
+        SqlConnection con = new SqlConnection(@"Data Source=MAITRAYEE1;Initial Catalog=GigManagement;Integrated Security=True");
         SqlCommand cmd = null;
         SqlCommand cmd1 = null;
 
@@ -88,6 +93,7 @@ namespace GigManagement.DAL
                 con.Close();
             }
         }
+
         public bool UpdateGigbyDate(int gigid, DateTime date)
         {
             try

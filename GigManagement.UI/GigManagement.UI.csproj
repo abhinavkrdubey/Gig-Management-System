@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GigManagement.ADO\GigManagement.DAL.csproj" />
+    <ProjectReference Include="..\GigManagement.Service\GigManagement.Service.csproj" />
   </ItemGroup>
 
 </Project>

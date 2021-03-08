@@ -94,3 +94,45 @@ D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.UI\obj\Debug\
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.dll
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.pdb
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.genruntimeconfig.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.exe
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.deps.json
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.runtimeconfig.json
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.runtimeconfig.dev.json
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Service.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Service.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csprojAssemblyReference.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.AssemblyInfoInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.AssemblyInfo.cs
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csproj.CoreCompileInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csproj.CopyComplete
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.genruntimeconfig.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

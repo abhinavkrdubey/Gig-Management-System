@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Text.RegularExpressions;
-using GigManagement.DAL;
+using GigManagement.Service;
+
 
 namespace GigManagement.UI
 {
@@ -10,9 +11,13 @@ namespace GigManagement.UI
 
         static void Main(string[] args)
         {
-            GigLogin prog = new GigLogin();
-            ArtistDAO ado = new ArtistDAO();
-            UserADO user = new UserADO();
+
+            UserService userService = new UserService();
+            ArtistService artistService = new ArtistService();
+            GigLoginService gigLoginService = new GigLoginService();
+            //GigLogin prog = new GigLogin();
+            //ArtistDAO ado = new ArtistDAO();
+            //UserDAO user = new UserDAO();
             string uname = null;
             string aname = null;
             bool isWholeFalse = true;
@@ -49,7 +54,7 @@ namespace GigManagement.UI
                                     } while (!IsValidPassword(password));
                                     try
                                     {
-                                        if (prog.CreateUserAccount(new Model.CreateUser() { username = username, name = name, password = password }))
+                                        if (gigLoginService.CreateUserAccount(new Model.CreateUser() { username = username, name = name, password = password }))
                                         {
                                             Console.WriteLine("Account Created! Welcome, {0}", name);
                                             isFalse = false;
@@ -85,7 +90,7 @@ namespace GigManagement.UI
                                     } while (!IsValidPassword(password1));
                                     try
                                     {
-                                        if (prog.CreateArtistAccount(new Model.CreateArtist() { artist_username = username1, name = name1, password = password1 }))
+                                        if (gigLoginService.CreateArtistAccount(new Model.CreateArtist() { artist_username = username1, name = name1, password = password1 }))
                                         {
                                             Console.WriteLine("Account Created! Welcome, {0}", name1);
                                             isFalse = false;
@@ -123,7 +128,7 @@ namespace GigManagement.UI
                                 string password2 = Console.ReadLine();
                                 try
                                 {
-                                    if (prog.UserLogin(username2, password2))
+                                    if (gigLoginService.UserLogin(username2, password2))
                                     {
                                         Console.WriteLine("Login Success");
                                         uname = username2;
@@ -145,7 +150,7 @@ namespace GigManagement.UI
                                             {
                                                 case 1:
                                                     Console.WriteLine("Here are your following Gigs");
-                                                    DataTable dt = user.Getgigs();
+                                                    DataTable dt = userService.Getgigs();
                                                     foreach (DataRow r in dt.Rows)
                                                     {
                                                         Console.WriteLine($"GigName:{r["gig_name"]} \t GigDate:{r["gig_date"]} \t GigVenue:{r["venue"]}");
@@ -166,7 +171,7 @@ namespace GigManagement.UI
                                                             {
                                                                 Console.WriteLine("Enter the Gig Name");
                                                                 string gig_name = Console.ReadLine();
-                                                                DataRow row = user.SearchGigByName(gig_name);
+                                                                DataRow row = userService.SearchGigByName(gig_name);
                                                                 if (row != null)
 
                                                                     Console.WriteLine($"GigName:{row["gig_name"]} GigDate:{row["gig_date"]} GigVenue:{row["venue"]}");
@@ -185,7 +190,7 @@ namespace GigManagement.UI
                                                             {
                                                                 Console.WriteLine("Enter the Gig Venue");
                                                             string gig_venue = Console.ReadLine();
-                                                            DataRow row2 = user.SearchGigByVenue(gig_venue);
+                                                            DataRow row2 = userService.SearchGigByVenue(gig_venue);
                                                                 if (row2 != null)
 
                                                                     Console.WriteLine($"GigName:{row2["gig_name"]} GigDate:{row2["gig_date"]} GigVenue:{row2["venue"]}");
@@ -204,7 +209,7 @@ namespace GigManagement.UI
                                                             {
                                                                 Console.WriteLine("Enter the Gig Date");
                                                                 DateTime gig_date = DateTime.Parse(Console.ReadLine());
-                                                                DataRow row1 = user.SearchGigByDate(gig_date);
+                                                                DataRow row1 = userService.SearchGigByDate(gig_date);
                                                                 if (row1 != null)
 
                                                                     Console.WriteLine($"GigName:{row1["gig_name"]} GigDate:{row1["gig_date"]} GigVenue:{row1["venue"]}");
@@ -230,35 +235,37 @@ namespace GigManagement.UI
                                                         Console.WriteLine("enter gig id ");
                                                         int gigid = Convert.ToInt32(Console.ReadLine());
 
-                                                        if (user.AddToCalender(uname, gigid))
+                                                        if (userService.AddToCalender(uname, gigid))
                                                         {
                                                             Console.WriteLine(" Gig added to Calender");
                                                         }
+                                                       
                                                     }
                                                     catch (Exception ex)
                                                     {
                                                         Console.WriteLine(ex.Message);
                                                     }
+                                                   
                                                     break;
                                                 case 4:
-                                                    dt = user.ViewCalender();
+                                                    dt = userService.ViewCalender();
                                                     foreach (DataRow r in dt.Rows)
                                                     {
                                                         Console.WriteLine($"Username:{r["username"]} GigId:{r["gig_id"]} GigName:{r["gig_name"]} ArtistName:{r["artist_name"]} isCancelled:{r["isCancelled"]} GigDate:{r["gig_date"]}");
                                                     }
                                                     break;
                                                 case 5:
-                                                    dt = user.ViewNames();
+                                                    dt = userService.ViewNames();
                                                     foreach(DataRow r in dt.Rows)
                                                     {
-                                                        Console.WriteLine($"{ r["names"] }");
+                                                        Console.WriteLine($"{ r["artist_username"] }");
                                                     }
-                                                    Console.WriteLine("Enter the Artist Name you want to follow");
+                                                    Console.WriteLine("Enter the Artist username you want to follow");
                                                     string follow_artist = Console.ReadLine();
-                                                    user.followArtist(uname, follow_artist);
+                                                    userService.followArtist(uname, follow_artist);
                                                     Console.WriteLine(uname + " " + "following " + follow_artist);
                                                     break;
-                                                case 6: user.DisplayFollows(uname);
+                                                case 6: userService.DisplayFollows(uname);
                                                     break;
                                                 case 7: isUserQuit = false;
                                                     break;
@@ -287,7 +294,7 @@ namespace GigManagement.UI
                                 string password3 = Console.ReadLine();
                                 try
                                 {
-                                    if (prog.ArtistLogin(username3, password3))
+                                    if (gigLoginService.ArtistLogin(username3, password3))
                                     {
                                         Console.WriteLine("Login Success");
                                         aname = username3;
@@ -321,7 +328,7 @@ namespace GigManagement.UI
                                                         Console.WriteLine("Enter the Genre: ");
                                                         string gig_genre = Console.ReadLine();
                                                       
-                                                        if (ado.AddGig(new Model.CreateGigs() { gigid = gigid, gig_name = gig_name, artist = artist_name, venue = venue, gigdate = date, genre = gig_genre }))
+                                                        if (artistService.AddGig(new Model.CreateGigs() { gigid = gigid, gig_name = gig_name, artist = artist_name, venue = venue, gigdate = date, genre = gig_genre }))
                                                         {
                                                             Console.WriteLine("New gig added ");
                                                         }
@@ -359,9 +366,12 @@ namespace GigManagement.UI
                                                             {
                                                                 Console.WriteLine("Enter the Gig ID: ");
                                                                 int gig_id = Convert.ToInt32(Console.ReadLine());
-                                                                Console.WriteLine("Enter the updated venue: ");
+                                                                Console.WriteLine("Enter the updated venue");
+                                                                //Console.WriteLine("Enter the updated venue: ");
                                                                 string updated_venue = Console.ReadLine();
-                                                                if (ado.UpdateGigbyVenue(gig_id, updated_venue))
+
+                                                           
+                                                                if (artistService.UpdateGigbyVenue(gig_id, updated_venue))
                                                                 {
                                                                     Console.WriteLine("Venue updated ");
                                                                 }
@@ -384,7 +394,7 @@ namespace GigManagement.UI
                                                                 int gig_id1 = Convert.ToInt32(Console.ReadLine());
                                                                 Console.WriteLine("Enter the updated Date: ");
                                                                 DateTime updated_date = DateTime.Parse(Console.ReadLine());
-                                                                if (ado.UpdateGigbyDate(gig_id1, updated_date))
+                                                                if (artistService.UpdateGigbyDate(gig_id1, updated_date))
                                                                 {
                                                                     Console.WriteLine("Date updated");
                                                                 }
@@ -407,7 +417,7 @@ namespace GigManagement.UI
                                                                 int gig_id2 = Convert.ToInt32(Console.ReadLine());
                                                                 Console.WriteLine("Do you want to cancel the Gig?");
                                                                 string isCancelled = Console.ReadLine();
-                                                                if (ado.isCancelled(gig_id2, isCancelled))
+                                                                if (artistService.isCancelled(gig_id2, isCancelled))
                                                                 {
                                                                     Console.WriteLine("Gig Status Modified");
                                                                 }
@@ -433,7 +443,7 @@ namespace GigManagement.UI
                                                     {
                                                         Console.WriteLine("Enter gig Id you want to delete");
                                                         int gigId = Convert.ToInt32(Console.ReadLine());
-                                                        if (ado.deleteGig(gigId))
+                                                        if (artistService.deleteGig(gigId))
                                                         {
                                                             Console.WriteLine("Gig deleted");
                                                         }

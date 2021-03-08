@@ -5,10 +5,10 @@ using GigManagement.Model;
 
 namespace GigManagement.DAL
 {
-    public class UserADO
+    public class UserDAO
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ACUTTSL\SQLEXPRESS;Initial Catalog=GigManagement;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=MAITRAYEE1;Initial Catalog=GigManagement;Integrated Security=True");
         SqlCommand cmd = null;
         SqlDataAdapter da = null;
 
@@ -92,25 +92,27 @@ namespace GigManagement.DAL
         {
             try
             {
-                query = "Insert into gig_calender values(@username,@gig_id)";
-                cmd = new SqlCommand(query, con);
+               
+                    query = "Insert into gig_calender values(@username,@gig_id)";
+                    cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@gig_id", gig_id);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                return true;
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@gig_id", gig_id);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                    
+                
+              
+
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            finally
-            {
-                con.Close();
-            }
+           
         }
-        public DataTable ViewCalender()
+            public DataTable ViewCalender()
         {
             try
             {
@@ -129,7 +131,7 @@ namespace GigManagement.DAL
         {
             try
             {
-                query = "select names from artist_details";
+                query = "select artist_username from artist_details";
                 da = new SqlDataAdapter(query, con);
                 dt = new DataTable();
                 da.Fill(dt);

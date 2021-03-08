@@ -46,3 +46,15 @@ D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.ADO\obj\Debug
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CopyComplete
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.dll
 D:\Programming Stuffs\Sprint-1\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.deps.json
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csprojAssemblyReference.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.AssemblyInfoInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.AssemblyInfo.cs
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CoreCompileInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CopyComplete
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.pdb

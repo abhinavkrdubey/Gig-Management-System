@@ -1,0 +1,14 @@
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.deps.json
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csprojAssemblyReference.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.AssemblyInfoInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.AssemblyInfo.cs
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csproj.CoreCompileInputs.cache
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csproj.CopyComplete
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.dll
+C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.pdb
