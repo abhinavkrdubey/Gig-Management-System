@@ -58,3 +58,15 @@ C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\net
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CopyComplete
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.dll
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.deps.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csprojAssemblyReference.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.AssemblyInfo.cs
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.csproj.CopyComplete
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.ADO\obj\Debug\netcoreapp3.1\GigManagement.DAL.pdb

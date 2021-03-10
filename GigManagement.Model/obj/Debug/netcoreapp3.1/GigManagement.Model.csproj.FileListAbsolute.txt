@@ -43,3 +43,12 @@ C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Model\obj\Debug\n
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csproj.CoreCompileInputs.cache
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.dll
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.deps.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csprojAssemblyReference.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.AssemblyInfo.cs
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Model\obj\Debug\netcoreapp3.1\GigManagement.Model.pdb

@@ -12,3 +12,17 @@ C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csproj.CopyComplete
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.dll
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.deps.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Service.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csprojAssemblyReference.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.AssemblyInfo.cs
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.csproj.CopyComplete
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.Service\obj\Debug\netcoreapp3.1\GigManagement.Service.pdb

@@ -8,7 +8,7 @@ namespace GigManagement.DAL
     public class UserDAO
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=MAITRAYEE1;Initial Catalog=GigManagement;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ACUTTSL\SQLEXPRESS;Initial Catalog=GigManagement;Integrated Security=True");
         SqlCommand cmd = null;
         SqlDataAdapter da = null;
 
@@ -142,25 +142,42 @@ namespace GigManagement.DAL
                 throw ex;
             }
         }
-        public void followArtist(string UName, string AName)
+        public bool followArtist(string uname, string follow_artist)
         {
             try
             {
-                query = "Insert into following(username,artist_username) values (@UName,@AName)";
-                cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@UName", UName);
-                cmd.Parameters.AddWithValue("@AName", AName);
+                query = "select count(*) from following where username=@uname and artist_username=@follow_artist";
                 con.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
+                cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@uname", uname);
+                cmd.Parameters.AddWithValue("@follow_artist", follow_artist);
+                int record = (int)cmd.ExecuteScalar();
+                if (record == 0)
+                {
+                    cmd.Parameters.Clear();
+                    query = "Insert into following(username,artist_username) values (@uname,@follow_artist)";
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@uname", uname);
+                    cmd.Parameters.AddWithValue("@follow_artist", follow_artist);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }   
+             catch(Exception ex)
             {
-               throw ex;
+                throw ex;
             }
             finally
             {
                 con.Close();
             }
+             
         }
         public void DisplayFollows(string UName)
         {

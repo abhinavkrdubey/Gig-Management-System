@@ -15,9 +15,6 @@ namespace GigManagement.UI
             UserService userService = new UserService();
             ArtistService artistService = new ArtistService();
             GigLoginService gigLoginService = new GigLoginService();
-            //GigLogin prog = new GigLogin();
-            //ArtistDAO ado = new ArtistDAO();
-            //UserDAO user = new UserDAO();
             string uname = null;
             string aname = null;
             bool isWholeFalse = true;
@@ -262,8 +259,22 @@ namespace GigManagement.UI
                                                     }
                                                     Console.WriteLine("Enter the Artist username you want to follow");
                                                     string follow_artist = Console.ReadLine();
-                                                    userService.followArtist(uname, follow_artist);
-                                                    Console.WriteLine(uname + " " + "following " + follow_artist);
+                                                    try
+                                                    {
+                                                        if (userService.followArtist(uname, follow_artist))
+                                                        {
+                                                            Console.WriteLine(uname + " " + "following " + follow_artist);
+                                                        }
+                                                        else
+                                                        {
+                                                            throw new AlreadyFollowingException();
+                                                        }
+                                                    }
+                                                    catch(AlreadyFollowingException ex)
+                                                    {
+                                                        Console.WriteLine(ex.Message);
+                                                    }
+                                                    
                                                     break;
                                                 case 6: userService.DisplayFollows(uname);
                                                     break;

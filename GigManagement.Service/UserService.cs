@@ -38,9 +38,9 @@ namespace GigManagement.Service
         {
             return user.ViewCalender();
         }
-        public void followArtist(string UName, string AName)
+        public bool followArtist(string UName, string AName)
         {
-            user.followArtist(UName, AName);
+            return user.followArtist(UName, AName);
         }
         public void DisplayFollows(string UName)
         {

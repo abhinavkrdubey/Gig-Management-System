@@ -136,3 +136,45 @@ C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netc
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\91863\Desktop\Gig\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.exe
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.deps.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.runtimeconfig.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.runtimeconfig.dev.json
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.UI.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.DAL.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Model.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Service.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Service.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.DAL.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\bin\Debug\netcoreapp3.1\GigManagement.Model.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csprojAssemblyReference.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.AssemblyInfoInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.AssemblyInfo.cs
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csproj.CoreCompileInputs.cache
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.csproj.CopyComplete
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.dll
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.pdb
+D:\Programming Stuffs\Capgemini_Sprint\Gig-Management-System\GigManagement.UI\obj\Debug\netcoreapp3.1\GigManagement.UI.genruntimeconfig.cache

@@ -47,4 +47,11 @@ namespace GigManagement.UI
 
         }
     }
+    class AlreadyFollowingException : Exception
+    {
+        public AlreadyFollowingException() : base(String.Format("You are already following the artist"))
+        {
+
+        }
+    }
 }
